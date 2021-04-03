@@ -1,0 +1,14 @@
+version: "3.9"  # optional since v1.27.0
+services:
+  raspicam:
+    build: .
+    ports:
+      - "80:8000"
+    volumes:
+      - /opt/vc:/opt/vc
+    environment:
+      LD_LIBRARY_PATH: /opt/vc/lib
+    privileged: true
+    container_name: raspicam
+    devices:
+      - "/dev/vchiq:/dev/vchiq"

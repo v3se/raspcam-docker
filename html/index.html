@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <style>
+      .container {
+      max-width: 2000px;
+      }
+      .image-wrapper {
+      position: relative;
+      padding-bottom: 75%;
+      }
+      .image-wrapper img {
+      position: absolute;
+      object-fit: cover;
+      width: 100%;
+      height: auto;
+  		margin-left: auto;
+  		margin-right: auto;
+			box-shadow: 5px 5px 2px #ccc;
+      }
+    </style>
+    <title>RaspCam Joenniska</title>
+  </head>
+  <body>
+    <h1>RaspCam - Joenniska</h1>
+    <div class="container">
+      <div class="image-wrapper">
+        <img src="stream.mjpg"/>
+      </div>
+    </div>
+  </body>
+</html>
